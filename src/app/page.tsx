@@ -5,6 +5,7 @@ import CardLoading, { Card } from "@/components/Card";
 import { useQuery } from "react-query";
 import { useState } from "react";
 import SearchBar from "@/components/SearchBar";
+import { Toggle } from "@/components/ui/toggle";
 // import { Mina } from "next/font/google";
 
 type ShowData = {
@@ -94,6 +95,8 @@ export default function Home() {
         <section className="flex w-full justify-center ">
           <SearchBar onChange={handleChange} value={input} className="" />
         </section>
+        <Toggle/>
+
         </div>
 
         <section className="flex  flex-wrap gap-3 justify-between  ">
