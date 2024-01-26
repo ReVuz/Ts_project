@@ -27,7 +27,7 @@ export default function SearchBar({ onChange, className, value }: Props) {
         onChange={onChange}
         type="text"
         value={value}
-        placeholder="Seach for Tv shows "
+        placeholder="Seach for Tv shows"
         className="w-full h-[38px] rounded-md bg-inherit outline-none p-2   "
       />
     </div>

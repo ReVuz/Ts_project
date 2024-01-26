@@ -88,11 +88,13 @@ export default function Home() {
   return (
     <main >
       <div className="p-8 max-w-7xl flex flex-col gap-5  mx-auto  ">
-        <h2 className="text-4xl font-semibold">Tv Shows </h2>
+        <div className="flex">
+        <h2 className="text-4xl font-semibold">MovieApp </h2>
         {/* searchbar */}
         <section className="flex w-full justify-center ">
           <SearchBar onChange={handleChange} value={input} className="" />
         </section>
+        </div>
 
         <section className="flex  flex-wrap gap-3 justify-between  ">
           {isLoading
@@ -100,7 +102,7 @@ export default function Home() {
               .fill(null)
               .map((_, i) => <CardLoading key={i} />)
             : data?.map((d, i) => (
-              <Card key={i} image={d.image.medium} name={d.name} />
+              <Card key={i} image={d.image.medium} name={d.name} rating={d.rating.average}/>
             ))}
         </section>
       </div>

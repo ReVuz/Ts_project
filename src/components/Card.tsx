@@ -6,19 +6,21 @@ import React from "react";
 type Props = {
   image: string;
   name: string;
+  rating: number;
 };
 
-export function Card({ image, name }: Props) {
+export function Card({ image, name, rating}: Props) {
   return (
-    <div className="   flex flex-col items-start p-1 w-[158px]  sm:w-[178px]      ">
+    <div className="my-5 flex flex-col items-start p-1 w-[158px]  sm:w-[178px]">
       <Image
         width={160}
         height={250}
         alt="movieImg"
         src={image}
-        className=" relative h-[210px]  sm:h-[237px] w-full bg-gray-300 overflow-hidden   transition-all"
+        className=" relative h-[210px] rounded sm:h-[237px] w-full bg-gray-300 overflow-hidden   transition-all"
       />
       <p className=" text-left py-2 font-semibold  ">{name}</p>
+      <p className=" text-left font-semibold m-0">Rating: {rating}</p>
     </div>
   );
 }
