@@ -122,10 +122,29 @@ export const MovieShowsWrapper = styled.div`
                 border-bottom: 1px solid gray;
             }
         }
-    }
+        .buttons{
+            text-align: center;
+            border: none;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 90%;
+            margin: 10px;
 
-    .button{
-        text-align: center;
-        border: none;
+            .btnPrev, .btnNext {
+                border: none;
+                outline: none;
+                color: #fff;
+                font-size: 18px;
+                font-weight: bold;
+                background-color: #f76429;
+                border-radius: 5px;
+
+                &:hover {
+                    background-color: #000;
+                    cursor: pointer;
+                }
+            }
+        }
     }
 `;
