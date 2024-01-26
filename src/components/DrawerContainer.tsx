@@ -25,7 +25,7 @@ const DrawerContainer = () => {
             >
                 <List>
                     {menuItems.map((nav, index) => (
-                        <ListItemButton onClick={() => setOpenDrawer(false)} key={index}>
+                        <ListItemButton component="a" href="#" onClick={() => setOpenDrawer(false)} key={index}>
                             <ListItemIcon>
                                 <ListItemText sx={{ color: "#blue" }} >{nav.name}</ListItemText>
                             </ListItemIcon>

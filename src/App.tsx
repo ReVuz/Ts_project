@@ -5,13 +5,13 @@ function App() {
   return (
     <>
       <Header/>
-      <DisplayItems apiEndpoint='string'
+      {/* <DisplayItems apiEndpoint='string'
       itemHeading='Hello'
       tvShowOn={true}
       showButtons={true}
       MoviesOn={true}
       numberOfMovies={17}
-      />
+      /> */}
     </>
   );
 }
