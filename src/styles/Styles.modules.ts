@@ -1,4 +1,4 @@
-import  styled from 'styled-components'
+import styled from 'styled-components';
 
 //Header.tsx
 export const NavbarWrapper = styled.div`
@@ -17,3 +17,4 @@ export const NavbarWrapper = styled.div`
 export const MovieShowsWrapper = styled.div`
     
 `;
+
