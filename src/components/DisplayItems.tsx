@@ -90,15 +90,15 @@ const DisplayItems: React.FC<DataProps> = ({
             ) : (
                 <>
                     <div className="movieHeading">
-                        <h2>{itemHeading}</h2>
+                        <h1>{itemHeading}</h1>
                     </div>
                     <div className='movieCard'>
                         {showItems.map((items) => {
                             const percentage = items.vote_average * 10;
 
                             return (
-                                <>
-                                    <div className="movie" key={items.id}>
+                                <div key={items.id}>
+                                    <div className="movie" >
                                         <div className="movieImage">
                                             <img
                                                 src={`https://image.tmdb.org/t/p/w200/${items.poster_path}`}
@@ -121,7 +121,7 @@ const DisplayItems: React.FC<DataProps> = ({
                                             )}
                                         </div>
                                     </div>
-                                </>
+                                </div>
                             );
                         })}
                         {showButtons && (

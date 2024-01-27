@@ -1,25 +1,21 @@
-
-import DisplayItems from "./components/DisplayItems";
-import Header from "./components/Header";
-import { trending, apiKey, popularShows } from "./modules/ApiLinks";
-
-const itemsProps = {
-  numberOfMovies: 5,
-  moviesOn: false,
-  tvShows: true,
-  showButtons: true,
-};
+import React from 'react';
+import Header from './components/Header';
+import Home from "./pages/Home";
+import Movies from "./pages/Movies";
+import Popular from "./pages/Popular";
+import TvShows from "./pages/TvShows";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
     <>
-    <Header />
-    <DisplayItems {...itemsProps}
-    apiEndpoint={`${popularShows}?api_key=${apiKey}`}
-    itemHeading={"Popular Shows"}/>
-    <DisplayItems {...itemsProps}
-    apiEndpoint={`${popularShows}?api_key=${apiKey}`}
-    itemHeading={"Popular Shows"}/>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Movies" element={<Movies />} />
+        <Route path="/Popular" element={<Popular />} />
+        <Route path="/TvShows" element={<TvShows />} />
+      </Routes>
     </>
   );
 }
