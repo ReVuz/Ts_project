@@ -1,6 +1,6 @@
 /** @format */
 
-import Image from "next/image";
+// import Image from "next/image";
 import React from "react";
 
 type Props = {
@@ -9,16 +9,16 @@ type Props = {
   rating: number;
 };
 
-export function Card({ image, name, rating}: Props) {
+export function Card({ image, name, rating }: Props) {
   return (
     <div className="my-5 flex flex-col items-start p-1 w-[158px]  sm:w-[178px]">
-      <Image
+      {/* <Image
         width={160}
         height={250}
         alt="movieImg"
         src={image}
         className=" relative h-[210px] rounded sm:h-[237px] w-full bg-gray-300 overflow-hidden   transition-all"
-      />
+      /> */}
       <p className=" text-left py-2 font-semibold  ">{name}</p>
       <p className=" text-left font-semibold m-0">Rating: {rating}</p>
     </div>

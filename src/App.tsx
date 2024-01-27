@@ -1,9 +1,10 @@
-import Header from "./components/Header";
+import React from 'react';
+import Header from './components/Header';
 import Home from "./pages/Home";
 import Movies from "./pages/Movies";
 import Popular from "./pages/Popular";
 import TvShows from "./pages/TvShows";
-import {Route, Routes} from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
