@@ -87,6 +87,7 @@ export const MovieShowsWrapper = styled.div`
                     border-bottom-right-radius: 25px;
                     box-shadow: 1px 1px 10px #000;
                     padding: 5px;
+                    height: 300px;
                 }
 
                 > span {

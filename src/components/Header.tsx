@@ -6,8 +6,8 @@ import { NavLink } from 'react-router-dom'
 
 export const menuItems = [
     { name: "Home", link: '/' },
-    { name: "Now Playing", link: '/NowPlaying' },
     { name: "Popular", link: '/Popular' },
+    { name: "Movies", link: '/Movies' },
     { name: "Tv Shows", link: '/TvShows' },
 ]
 
