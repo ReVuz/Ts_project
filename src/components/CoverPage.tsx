@@ -34,7 +34,7 @@ const CoverPage: React.FC<CoverProps> = ({
                     <button>Search</button>
                 </SearchBar>
             )}
-            
+
         </Cover>
     )
 }
