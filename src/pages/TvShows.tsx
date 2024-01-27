@@ -1,7 +1,7 @@
 import React from 'react'
-import CoverPage from "../components/CoverPage";
-import DisplayItems from "../components/DisplayItems";
-import { apiKey, airing_today, top_rated_shows } from "../modules/ApiLinks";
+import CoverPage from "../components/CoverPage.tsx";
+import DisplayItems from "../components/DisplayItems.tsx";
+import { apiKey, airing_today, top_rated_shows } from "../modules/ApiLinks.ts";
 import coverPicture from "../assets/img.jpg"
 
 const TvShows = () => {

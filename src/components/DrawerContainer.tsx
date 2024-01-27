@@ -8,7 +8,7 @@ import {
 	ListItemText,
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
-import { menuItems } from './Header';
+import { menuItems } from './Header.tsx';
 
 const DrawerContainer = () => {
 	const [openDrawer, setOpenDrawer] = React.useState(false);
@@ -30,7 +30,7 @@ const DrawerContainer = () => {
 					))}
 				</List>
 			</Drawer>
-			<IconButton sx={{marginLeft: "auto", color:"whitesmoke"}}
+			<IconButton sx={{ marginLeft: "auto", color: "whitesmoke" }}
 				onClick={drawerBtn}>
 				<MenuIcon />
 			</IconButton>

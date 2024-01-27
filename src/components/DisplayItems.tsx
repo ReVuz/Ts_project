@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { MovieShowsWrapper } from '../styles/Styles.modules'
+import { MovieShowsWrapper } from '../styles/Styles.modules.ts'
 import axios from 'axios'
 import { CircularProgress } from '@mui/material'
 

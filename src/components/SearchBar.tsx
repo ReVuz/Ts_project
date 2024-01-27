@@ -1,6 +1,6 @@
 /** @format */
 
-import { cn } from '../lib/utils';
+import { cn } from '../lib/utils.ts';
 import React from "react";
 import { AiOutlineSearch } from "react-icons/ai";
 

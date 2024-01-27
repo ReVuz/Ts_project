@@ -1,5 +1,5 @@
 import React from 'react'
-import { Cover, SearchBar } from '../styles/Styles.modules'
+import { Cover, SearchBar } from '../styles/Styles.modules.ts'
 
 interface CoverProps {
     title: string;

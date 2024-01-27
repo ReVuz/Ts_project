@@ -1,7 +1,7 @@
 import React from 'react'
 import { AppBar, Toolbar, Typography, Tab, Button, useTheme, useMediaQuery } from '@mui/material'
-import { NavbarWrapper } from '../styles/Styles.modules'
-import DrawerContainer from './DrawerContainer'
+import { NavbarWrapper } from '../styles/Styles.modules.ts'
+import DrawerContainer from './DrawerContainer.tsx'
 import { NavLink } from 'react-router-dom'
 
 export const menuItems = [

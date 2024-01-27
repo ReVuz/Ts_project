@@ -1,9 +1,9 @@
 import React from 'react';
-import Header from './components/Header';
-import Home from "./pages/Home";
-import Movies from "./pages/Movies";
-import Popular from "./pages/Popular";
-import TvShows from "./pages/TvShows";
+import Header from './components/Header.tsx';
+import Home from "./pages/Home.tsx";
+import Movies from "./pages/Movies.tsx";
+import Popular from "./pages/Popular.tsx";
+import TvShows from "./pages/TvShows.tsx";
 import { Route, Routes } from "react-router-dom";
 // import { Button } from './components/ui/button';
 // import { DropdownMenu } from './components/ui/dropdown-menu';
