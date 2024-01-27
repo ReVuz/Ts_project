@@ -10,7 +10,17 @@ export const NavbarWrapper = styled.div`
     .navLinks, .loginBtn{
         margin-left: auto;
     }
-    margin-bottom: 100px;
+    .navLinks a.active {
+        padding-bottom: 10px;
+        border-bottom: 1px solid #fff;
+    }
+    .links {
+        color: #fff;
+        &:hover {
+            trandform: scale(1.1);
+        }
+    }
+    margin-bottom: 84px;
 `;
 
 //DisplayItems.tsx
@@ -46,7 +56,9 @@ export const MovieShowsWrapper = styled.div`
         width: 100%;
         > h1 {
             margin-bottom: 1.5rem;
+            margin-left: 2rem;
         }
+        
     }
 
     .movieCard{
@@ -61,6 +73,7 @@ export const MovieShowsWrapper = styled.div`
             align-items: center;
             flex-direction: column;
             transition: all 0.4s ease-in-out;
+            margin-bottom: 3rem;
 
             .movieImage {
                 display: flex;
@@ -74,7 +87,6 @@ export const MovieShowsWrapper = styled.div`
                     border-bottom-right-radius: 25px;
                     box-shadow: 1px 1px 10px #000;
                     padding: 5px;
-                    height: 200px;
                 }
 
                 > span {
@@ -114,6 +126,7 @@ export const MovieShowsWrapper = styled.div`
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
+                font-size: 14px;
             }
 
             > p {
@@ -146,5 +159,134 @@ export const MovieShowsWrapper = styled.div`
                 }
             }
         }
+    }
+`;
+
+//CoverPage.tsx
+export const Cover = styled.div`
+    text-align: center;
+    width: 80%;
+    margin: 18px auto 0;
+    position: relative;
+    text-transform: capitalize;
+
+    .coverText {
+        position: absolute;
+        color: #fff;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 30%;
+        text-shadow: 1px 1px 3px black;
+        letter-spacing: 1px;
+        line-height: 1;
+
+        > h1 {
+            font-size: 3rem;
+        }
+
+        > p {
+            font-size: 20px;
+        }
+
+        em {
+            font-size: 15px;
+            margin-top: 10px;
+        }
+
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.8);
+        border-bottom-left-radius: 240px;
+        border-bottom-right-radius: 240px;
+    }
+    >img {
+        height: 300px;
+        width: 100%;
+        border-bottom-left-radius: 240px;
+        border-bottom-right-radius: 240px;
+    }
+
+    @media (max-width: 1020px) {
+        .coverText {
+            letter-spacing: 1px;
+            line-height: 0.2;
+            > h1 {
+                font-size: 2.2rem;
+            }
+            > p, em {
+                font-size: 15px;
+            }
+        }
+        &::before {
+            >img {
+                height: 240px;
+            }
+        }
+    }
+
+    @media (max-width: 800px) {
+        width: 100%;
+        margin: 5.2rem auto 0;
+        .coverText {
+            line-height: 1;
+            > h1 {
+                font-size: 2.2rem;
+            }
+            > p, em {
+                font-size: 15px;
+            }
+        }
+        &::before {
+            >img {
+                height: 240px;
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
+            }
+        }
+    }
+`;
+
+export const SearchBar = styled.div`
+    >input , >button {
+        height: 45px;
+        margin: auto;
+        outline: none;
+        border: none;
+        border-radius: 20px;
+        position: absolute;
+        top: 100%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    >input {
+        width: 70%;
+        box-shadow: 1px 1px 6px 2px gray;
+        padding: 10px;
+        font-size: 18px;
+        &::placeholder {
+            font-size: 14px;
+        }
+    }
+
+    >button {
+        padding: 0 25px;
+        left: 81%;
+        font-size: 15px;
+        background:linear-gradient(90deg, rgba(15,255,184,1) 33%, rgba(7,110,112,1) 100%);
+        font-weight: bolder;
+        cursor: pointer;
     }
 `;
